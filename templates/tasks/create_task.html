@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{ load static }
+
+{% block title %} Create List  {% endblock title %}
+
+{% block content %}
+
+
+<form method="POST">
+    <h1> Create List </h1>
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="create task" name="" id="">
+</form>
+
+{% endblock content%}

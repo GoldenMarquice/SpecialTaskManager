@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{ load static }
+
+{% block title %} Update Task {% endblock title %}
+
+{% block content %}
+
+<h1> Tasks </h1>
+{% for task in task_list %}
+
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title"> {{ task.title }} </h3>
+        <p class="card-subtitle"> {{ task.subtitle }} </p>
+        <p class="card-body"> {{ task.body }}</p>
+        <a href="{% url 'task_by_status' task.id %}">
+            {{ task.title }}
+        </a>
+    </div>
+</div>

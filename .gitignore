@@ -1,0 +1,8 @@
+venv
+*__pycache__*
+staticfiles
+.env
+config_setup.sh
+sendgrid.env
+sendgrid.env
+sendgrid.env
